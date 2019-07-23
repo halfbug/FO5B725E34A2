@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   root: {
   
+    padding:theme.spacing(3),
     backgroundColor: theme.palette.background.paper,
     textAlign: 'center',
 
@@ -37,17 +38,17 @@ const useStyles = makeStyles(theme => ({
       
  
 
-export default function CaseStudy() {
+export default function Results() {
   const classes = useStyles();
 
   return (
+     
     <div  className={classes.root}>
       <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
-        Case Study (Doesn't have to be yours)
+      Show Results Of This Service
       </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-      
-      Describe the results of the case study. You want visitors to think "this could happen to me too!"      
+      <Typography variant="body1" gutterBottom>
+      Show proof that your service solves their problems.
       </Typography>
       
     </div>

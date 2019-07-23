@@ -7,7 +7,8 @@ import Problem from './components/Problem'
 import Solution from './components/Solution'
 import Services from './components/Services'
 import PortFolio from './components/PortFolio'
-
+import Results from './components/Results'
+import Process from './components/Process'
 import './App.css';
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
 <Solution/>
 <Services/>
 <PortFolio/>
+<Results/>
+<Process/>
       <Footer/>
     </div>
   );
