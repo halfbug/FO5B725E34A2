@@ -9,12 +9,32 @@ import Services from './components/Services'
 import PortFolio from './components/PortFolio'
 import Results from './components/Results'
 import Process from './components/Process'
-import './App.css';
+// import './App.css';
+import {createMuiTheme} from '@material-ui/core/styles';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+// import { BrowserRouter } from "react-router-dom";
+
+
+const theme = createMuiTheme({
+  palette: {
+      // type: "dark",
+      primary: {
+          main: '#DC353D',
+      },
+      secondary: {
+          main: '#2D2D2D',
+      },
+  },
+});
+
+
 
 function App() {
   return (
     <div className="App">
-      <Home />
+    <MuiThemeProvider theme={theme}>
+      <Home >
+      <WorkedWith/>
       <CaseStudy/>
       <Problem/>
 <Solution/>
@@ -23,6 +43,8 @@ function App() {
 <Results/>
 <Process/>
       <Footer/>
+      </Home>
+      </MuiThemeProvider>
     </div>
   );
 }

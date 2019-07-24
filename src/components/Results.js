@@ -11,23 +11,14 @@ const useStyles = makeStyles(theme => ({
 
   },
 
+  body1:{
 
-
-
-      
-        paper: {
-          padding: theme.spacing(2),
-          textAlign: 'center',
-          color: theme.palette.text.secondary,
-        },
-        heroContent: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(8, 0, 6),
-          minHeight: "100vh",
-        },
-        heroButtons: {
-          marginTop: theme.spacing(4),
-        },
+    width:"85%",
+    textAlign:"left",
+    maxWidth: "100%",
+  marginLeft: "auto",
+  marginRight: "auto",
+  },
         heading1: {
           textTransform: "capitalize", 
           lineHeight: "normal",

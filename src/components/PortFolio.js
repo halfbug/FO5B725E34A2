@@ -37,9 +37,11 @@ const useStyles = makeStyles(theme => ({
         },
         body1:{
 
-            width:"100%",
-            textAlign:"left",
-            padding:theme.spacing(0,20,0,20),
+          width:"85%",
+          textAlign:"left",
+          maxWidth: "100%",
+        marginLeft: "auto",
+        marginRight: "auto",
         },
         body2:{
 

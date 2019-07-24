@@ -7,28 +7,9 @@ const useStyles = makeStyles(theme => ({
   padding:theme.spacing(3),
     backgroundColor: theme.palette.background.paper,
     textAlign: 'center',
+   
 
   },
-
-
-
-
-      
-        paper: {
-          padding: theme.spacing(2),
-          textAlign: 'center',
-          color: theme.palette.text.secondary,
-          width:'100%',
-          
-        },
-        heroContent: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(8, 0, 6),
-          minHeight: "100vh",
-        },
-        heroButtons: {
-          marginTop: theme.spacing(4),
-        },
         heading1: {
             padding:theme.spacing(3),
           textTransform: "capitalize", 
@@ -37,9 +18,12 @@ const useStyles = makeStyles(theme => ({
         },
         body1:{
 
-            width:"100%",
-            textAlign:"center",
-            padding:theme.spacing(0,20,0,20),
+            width:"85%",
+            textAlign:"left",
+            maxWidth: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+            // padding:theme.spacing(0,4,0,4),
         },
         body2:{
 

@@ -2,35 +2,19 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
+import Box from '@material-ui/core/Box';
+import Chip from '@material-ui/core/Chip';
+
 const useStyles = makeStyles(theme => ({
   root: {
-  padding:theme.spacing(3),
+  padding:theme.spacing(2),
     backgroundColor: theme.palette.background.paper,
-    textAlign: 'center',
+    textAlign: 'left',
 
   },
 
-
-
-
-      
-        paper: {
-          padding: theme.spacing(2),
-          textAlign: 'center',
-          color: theme.palette.text.secondary,
-          width:'100%',
-          
-        },
-        heroContent: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(8, 0, 6),
-          minHeight: "100vh",
-        },
-        heroButtons: {
-          marginTop: theme.spacing(4),
-        },
         heading1: {
-            padding:theme.spacing(3),
+            padding:theme.spacing(1),
           textTransform: "capitalize", 
           lineHeight: "normal",
           fontSize: 40,
@@ -38,14 +22,34 @@ const useStyles = makeStyles(theme => ({
         body1:{
 
             width:"100%",
-            textAlign:"center",
-            padding:theme.spacing(0,20,0,20),
+            // textAlign:"center",
+            // padding:theme.spacing(0,20,0,20),
         },
         body2:{
 
             width:"100%",
             textAlign:"left",
             padding:theme.spacing(0,20,0,20),
+        },
+        graybx:{
+          backgroundColor: theme.palette.background.default,
+          width: "85%",
+          maxWidth: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          padding:theme.spacing(2,4,2,4),
+        },
+        chip: {
+          margin: theme.spacing(1),
+          backgroundColor: theme.palette.background.default,
+          fontSize:20,
+        },
+        whtbx : {
+          width: "85%",
+          maxWidth: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          padding:theme.spacing(2,4,2,4),
         }
       }));
       
@@ -56,9 +60,9 @@ export default function Problem() {
   const classes = useStyles();
 
   return (
-      <div>
-    <div  className={classes.root}>
-      <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+      <div className={classes.root}>
+    <div className={classes.whtbx} >
+      <Typography variant="b" component="h1"  className={classes.heading1} paragraph>
       Identify Their Problem
       </Typography>
      
@@ -69,21 +73,36 @@ export default function Problem() {
        Make sure the problem they think they have is the one you address first.      </Typography>
 </div>
    {/* <div  className={classes.heroContent}> */}
-<main>
-       <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+
+<Box className={classes.graybx}>
+       <Typography variant="b" component="h1" align="left" className={classes.heading1} paragraph>
        Agitate Their Problem      </Typography>
 
        <Typography variant="body1" gutterBottom className={classes.body1} >
        This is where you'll want to make them feel the consequences of not dealing with their problem. It should amplify how bad things would get if the problem went unfixed. <br/>
        </Typography>
-       <Typography variant="body1" className={classes.body2}  gutterBottom >
-    <Icon>check_circle</Icon> Bad consequence #1 <br/>
+       <Chip
+        icon={<Icon>check_circle</Icon>}
+        label="Bad consequence #1"
+       // onClick={handleClick}
+        //onDelete={handleDelete}
+        className={classes.chip}
+        //variant="outlined"
+      /><br/>
+      <Chip
+        icon={<Icon>check_circle</Icon>}
+        label="Bad consequence #2"
+       // onClick={handleClick}
+        //onDelete={handleDelete}
+        className={classes.chip}
+        //variant="outlined"
+      />
+     {/* Bad consequence #1 <br/>
     <Icon>check_circle</Icon> Bad consequence #2 <br/>
     <Icon>check_circle</Icon> Bad consequence #3 <br/>
-    <Icon>check_circle</Icon> Bad consequence #4   
+    <Icon>check_circle</Icon> Bad consequence #4    */}
     
-       </Typography>
-       </main>
+       </Box>
       {/* </div> */}
 
     </div>

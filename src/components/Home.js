@@ -13,6 +13,7 @@ import HeroUnint from "./HeroUnit"
 import WorkedWith from './WorkedWith'
 import CaseStudy from './CaseStudy';
 
+
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -25,8 +26,9 @@ function MadeWithLove() {
   );
 }
 const useStyles = makeStyles(theme => ({
-  icon: {
-    marginRight: theme.spacing(2),
+  root: {
+    padding: 0,
+    margin: 0,
   },
   
   cardGrid: {
@@ -48,10 +50,25 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+  order:{
+    margin: theme.spacing(0,4 )
+  },
+  appbar:{
+    [theme.breakpoints.down('sm')]: {
+      display: "none !important",
+    },
+  }
 }));
 
 
-export default function Album() {
+export default function Home(props) {
   const classes = useStyles();
 
   return (
@@ -59,48 +76,25 @@ export default function Album() {
       <CssBaseline />
       {/* Hero unit */}
       <HeroUnint />
-      {/* <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>
-                </Grid>
-              </Grid>
-            </div>
-          </Container>
-        </div> */}
-      <AppBar position="relative">
+      
+      <AppBar position="static" className={classes.appbar}>
         <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Album layout
+          <CameraIcon edge="start" className={classes.icon} />
+          <Typography variant="h6" color="inherit" noWrap className={classes.title}>
+            Logo Here
           </Typography>
-          <Button color="inherit">Scroll</Button>
+          <Button color="inherit">Scroll 1</Button> | <Button color="inherit">Scroll 2</Button> 
+          <Button variant="contained" color="secondary" className={classes.order}>
+        Order
+      </Button>
         </Toolbar>
       </AppBar>
+
+      
       <main>
         
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-           <WorkedWith/>
-          </Grid>
+        <Container  className={classes.root}>
+          {props.children}
         </Container>
 
       </main>
