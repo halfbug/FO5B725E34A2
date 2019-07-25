@@ -53,6 +53,11 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       paddingTop: "56.25% !important",
     },
+
+    [theme.breakpoints.up('lg')]: {
+      // width :"100%",                                                                                                                                                                                                                                        
+      height: 380,
+    },
     
 },
   video : {
@@ -60,13 +65,10 @@ const useStyles = makeStyles(theme => ({
     top: 0,
     left: 0,
     width: "100%",
-    height: "100%",
+    height: "100%",                                                                                                                                  
     // width :560,
     // height: 315,
-    // [theme.breakpoints.down('sd')]: {
-      // width :"100%",
-      // height: "100%",
-    // },
+    
   },
   buttonMainTxt : {
     display: "block",
@@ -93,7 +95,7 @@ export default function FullWidthGrid() {
   return (
       <div className={classes.heroContent} >
           <Container maxWidth="lg" >
-          <Grid container spacing={3} >
+          <Grid container spacing={4} >
         <Grid item xs={12} spacing={3}>
         <Typography component="h4" variant="subtitle" align="center" className={classes.tophead}  gutterBottom>
         CALL OUT YOUR AUDIENCE HERE

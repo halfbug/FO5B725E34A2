@@ -3,43 +3,28 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
 import Gurantee from './Gurantee.js';
+import Grid from '@material-ui/core/Grid';
+
 const useStyles = makeStyles(theme => ({
   root: {
-  padding:theme.spacing(3),
+  // padding:theme.spacing(3),
     backgroundColor: theme.palette.background.paper,
     textAlign: 'center',
-
+    
   },
 
 
 
 
       
-        paper: {
-          padding: theme.spacing(2),
-          textAlign: 'center',
-          color: theme.palette.text.secondary,
-          width:'100%',
-          
-        },
-        heroContent: {
-          backgroundColor: theme.palette.background.paper,
-          padding: theme.spacing(8, 0, 6),
-          minHeight: "100vh",
-        },
-        heroButtons: {
-          marginTop: theme.spacing(4),
-        },
-        heading1: {
-          textTransform: "capitalize", 
-          lineHeight: "normal",
-          fontSize: 35,
-        },
         body1:{
-
-            width:"100%",
-            textAlign:"left",
-            padding:theme.spacing(0,20,0,20),
+          textAlign : "left",
+          width:"85%",    
+    paddingBottom:theme.spacing(4),
+    maxWidth: "100%",
+    marginLeft: "auto",
+    marginRight: "auto",
+         
         },
         body2:{
             // paddingLeft:,
@@ -49,14 +34,36 @@ const useStyles = makeStyles(theme => ({
         },
         step:{
             fontSize: 35,
-            paddingLeft:'20vh',
-            paddingRight:'20vh',
-            paddingTop:'5vh',
-            width:'150vh',
+            width:"85%",
+        //textAlign:"left",
+        maxWidth: "100%",
+      marginLeft: "auto",
+      marginRight: "auto",
+          background: theme.palette.background.default,
+          marginBottom:theme.spacing(5)
 
+        },
+        heading1: {
+          // padding:theme.spacing(4),
+        textTransform: "capitalize", 
+        lineHeight: "normal",
+        fontSize: 40,
+        width:"85%",    
+    //padding: theme.spacing(7,8,1,8),
+    maxWidth: "100%",
+    marginLeft: "auto",
+    marginRight: "auto",
+       
 
-
-        }
+      },
+      largeicon :{
+        fontSize : 48,
+        padding: 5
+      },
+      icon:{
+        textAlign: "center",
+        verticalAlign : "center"
+      }
       }));
       
       
@@ -66,8 +73,8 @@ export default function Process() {
   const classes = useStyles();
 
   return (
-    <div>
-     <div  className={classes.root}>
+    <div className={classes.root}>
+     <div  >
       <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
       Show The Process
       </Typography>   
@@ -76,37 +83,64 @@ export default function Process() {
       Remember people will never buy from you if they have unanswered questions. Often times they've never bought the type of service that you're providing so explain to them exactly how the whole process works. This way they know exactly what to expect.   </Typography>
 
        </div>
-      <div className={classes.step}>
-     
-      <Typography variant="b" component="h4" align="left" paragraph>
-       <Icon>edit </Icon>  Step 1  </Typography>
+       
+
+<div className={classes.step} >
+<Grid container spacing={4} >
+        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Icon className={classes.largeicon}>edit </Icon>
+          </Grid>
+          <Grid item xs={12} sm={9} spacing={3}>
+          <Typography variant="b" component="h4" align="left" pararaph>
+        Step 1  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
        Explain what happens in step 1 of your process!   </Typography>
-   </div>
-<div className={classes.step}>
-<Typography variant="b" component="h4" align="left" paragraph>
-       <Icon>edit </Icon>  Step 2   </Typography>  
-       <Typography variant="subtitle1" gutterBottom className={classes.body2} >
-       Explain what happens in step 2 of your process!   </Typography >   
+          </Grid>  
+          </Grid>
 </div>
 
-<div className={classes.step}>
-
-       <Typography variant="b" component="h4" align="left"  paragraph>
-       <Icon>edit </Icon>  Step 3 </Typography>  
+<div className={classes.step} >
+<Grid container spacing={4} >
+        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Icon className={classes.largeicon}>edit </Icon>
+          </Grid>
+          <Grid item xs={12} sm={9} spacing={3}>
+          <Typography variant="b" component="h4" align="left" pararaph>
+        Step 2  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
-       Explain what happens in step 3 of your process!   </Typography >   
+       Explain what happens in step 1 of your process!   </Typography>
+          </Grid>  
+          </Grid>
 </div>
 
-<div className={classes.step}>
-
-       <Typography variant="b" component="h4" align="left"  paragraph>
-       <Icon>edit </Icon>  Step 4   </Typography>  
+<div className={classes.step} >
+<Grid container spacing={4} >
+        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Icon className={classes.largeicon}>edit </Icon>
+          </Grid>
+          <Grid item xs={12} sm={9} spacing={3}>
+          <Typography variant="b" component="h4" align="left" pararaph>
+        Step 3  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
-       Explain what happens in step 4 of your process!   </Typography >   
-      </div>
-      <Gurantee/>
+       Explain what happens in step 1 of your process!   </Typography>
+          </Grid>  
+          </Grid>
+</div>
 
+<div className={classes.step} >
+<Grid container spacing={4} >
+        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Icon className={classes.largeicon}>edit </Icon>
+          </Grid>
+          <Grid item xs={12} sm={9} spacing={3}>
+          <Typography variant="b" component="h4" align="left" pararaph>
+        Step 4  </Typography>
+       <Typography variant="subtitle1" gutterBottom className={classes.body2} >
+       Explain what happens in step 1 of your process!   </Typography>
+          </Grid>  
+          </Grid>
+</div>
+<br/>
       </div>
      
     

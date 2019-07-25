@@ -11,10 +11,16 @@ const useStyles = makeStyles(theme => ({
 
   },
         heading1: {
-            padding:theme.spacing(3),
+            // padding:theme.spacing(4),
           textTransform: "capitalize", 
           lineHeight: "normal",
           fontSize: 40,
+          width:"85%",
+          //textAlign:"left",
+          maxWidth: "100%",
+        marginLeft: "auto",
+        marginRight: "auto",
+
         },
         body1:{
 
@@ -23,6 +29,7 @@ const useStyles = makeStyles(theme => ({
             maxWidth: "100%",
           marginLeft: "auto",
           marginRight: "auto",
+          // padding:theme.spacing(0,20,0,20),
             // padding:theme.spacing(0,4,0,4),
         },
         body2:{

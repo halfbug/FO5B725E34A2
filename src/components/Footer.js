@@ -8,25 +8,26 @@ import Link from '@material-ui/core/Link';
 import HeroUnint from "./HeroUnit"
 const useStyles = makeStyles(theme => ({
 footer: {
-    backgroundColor: theme.palette.background.paper,
+    background: theme.palette.secondary.main,
     padding: theme.spacing(6),
   },
 }))
 
 
  
- {/* Footer */}
+ 
  export default function Footer(){
     const classes = useStyles();
 
 
      return(
  <footer className={classes.footer}>
- <Typography variant="h6" align="center" gutterBottom>
-   Footer
+ 
+ <Typography variant="subtitle2" align="center" gutterBottom>
+ © 2012 - 2017, COMPANY NAME
  </Typography>
  <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-   Something here to give the footer a purpose!
+ Any other links you want here.
  </Typography>
 
 </footer>

@@ -14,17 +14,6 @@ import WorkedWith from './WorkedWith'
 import CaseStudy from './CaseStudy';
 
 
-function MadeWithLove() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        saf
-      </Link>
-      {' team.'}
-    </Typography>
-  );
-}
 const useStyles = makeStyles(theme => ({
   root: {
     padding: 0,
@@ -77,7 +66,7 @@ export default function Home(props) {
       {/* Hero unit */}
       <HeroUnint />
       
-      <AppBar position="static" className={classes.appbar}>
+      <AppBar position="sticky" className={classes.appbar}>
         <Toolbar>
           <CameraIcon edge="start" className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap className={classes.title}>
@@ -93,7 +82,7 @@ export default function Home(props) {
       
       <main>
         
-        <Container  className={classes.root}>
+        <Container  className={classes.root} maxWidth='xl'>
           {props.children}
         </Container>
 

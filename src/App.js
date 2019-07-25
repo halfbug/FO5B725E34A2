@@ -9,9 +9,14 @@ import Services from './components/Services'
 import PortFolio from './components/PortFolio'
 import Results from './components/Results'
 import Process from './components/Process'
+import Gurantee from './components/Gurantee'
 // import './App.css';
 import {createMuiTheme} from '@material-ui/core/styles';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import AskOrder from './components/AskOrder';
+import Testimonial from './components/Testimonial';
+import Faq from './components/Faq'
+import Helping from './components/Helping'
 // import { BrowserRouter } from "react-router-dom";
 
 
@@ -42,6 +47,11 @@ function App() {
 <PortFolio/>
 <Results/>
 <Process/>
+<Gurantee/>
+<AskOrder/>
+<Testimonial />
+<Faq />
+<Helping />
       <Footer/>
       </Home>
       </MuiThemeProvider>

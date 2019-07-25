@@ -38,10 +38,10 @@ const useStyles = makeStyles(theme => ({
 
 export default function OrderButton(props) {
   const classes = useStyles();
-
+const width = (props.width)? {width:props.width}: {};
   return (
         
-      <Button variant="contained"  className={classes.button} color="secondary" fullwidth>
+      <Button variant="contained" style={width}  className={classes.button} color="secondary" fullwidth>
           
         <ArrowForward className={clsx(classes.leftIcon, classes.iconSmall)} />
         <ArrowForward className={clsx(classes.leftIcon, classes.iconSmall)} />

@@ -3,6 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import CaseStudyimg from '../assets/images/casestudy.jpg'
+import Chip from '@material-ui/core/Chip';
+import QandA from './QandA';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -11,6 +14,26 @@ const useStyles = makeStyles(theme => ({
     // textAlign: 'center',
     padding: theme.spacing(7,8,1,8),
   },
+  heading1: {
+    padding:theme.spacing(3),
+  textTransform: "capitalize", 
+  lineHeight: "normal",
+  fontSize: 40,
+},
+body1:{
+
+  width:"85%",
+  textAlign:"left",
+  maxWidth: "100%",
+marginLeft: "auto",
+marginRight: "auto",
+},
+body2:{
+
+    width:"100%",
+    textAlign:"left",
+    padding:theme.spacing(0,20,0,20),
+}
        
       }));
       
@@ -23,18 +46,20 @@ export default function CaseStudy() {
   return (
     <div  className={classes.root}>
     <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
-        Case Study (Doesn't have to be yours)
+        Faq
+      </Typography>
+      <Typography variant="body1" gutterBottom className={classes.body1} >
+      Answer the most common questions. Again no one is going to buy from you with unanswered questions.
       </Typography>
     <Grid container spacing={1} >
         <Grid item xs={12} sm={6} >
-        <img width="100%" src={CaseStudyimg}  alt="" />
-       
+        
+       <QandA />
+       <QandA />
           </Grid>
           <Grid item xs={12} sm={6} >
-          <Typography variant="h6" component="subtitle1" align='left' >
-      
-      Describe the results of the case study. You want visitors to think "this could happen to me too!"      
-      </Typography>
+          <QandA />
+          <QandA />
           </Grid>
     </Grid>
      
