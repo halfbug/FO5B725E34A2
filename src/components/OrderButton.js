@@ -41,7 +41,7 @@ export default function OrderButton(props) {
 const width = (props.width)? {width:props.width}: {};
   return (
         
-      <Button variant="contained" style={width}  className={classes.button} color="secondary" fullwidth>
+      <Button variant="contained" style={width}  className={classes.button} color="secondary" >
           
         <ArrowForward className={clsx(classes.leftIcon, classes.iconSmall)} />
         <ArrowForward className={clsx(classes.leftIcon, classes.iconSmall)} />

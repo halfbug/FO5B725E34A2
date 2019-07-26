@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '@material-ui/core/Icon';
-import Gurantee from './Gurantee.js';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
@@ -75,7 +74,7 @@ export default function Process() {
   return (
     <div className={classes.root}>
      <div  >
-      <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+      <Typography variant="h6" component="h1" align="center" className={classes.heading1} paragraph>
       Show The Process
       </Typography>   
           
@@ -87,11 +86,11 @@ export default function Process() {
 
 <div className={classes.step} >
 <Grid container spacing={4} >
-        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Grid item xs={12} sm={2} className={classes.icon}>
         <Icon className={classes.largeicon}>edit </Icon>
           </Grid>
-          <Grid item xs={12} sm={9} spacing={3}>
-          <Typography variant="b" component="h4" align="left" pararaph>
+          <Grid item xs={12} sm={9} >
+          <Typography variant="h6" component="h4" align="left" pararaph="true">
         Step 1  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
        Explain what happens in step 1 of your process!   </Typography>
@@ -101,11 +100,11 @@ export default function Process() {
 
 <div className={classes.step} >
 <Grid container spacing={4} >
-        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Grid item xs={12} sm={2} className={classes.icon}>
         <Icon className={classes.largeicon}>edit </Icon>
           </Grid>
-          <Grid item xs={12} sm={9} spacing={3}>
-          <Typography variant="b" component="h4" align="left" pararaph>
+          <Grid item xs={12} sm={9} >
+          <Typography variant="h6" component="h4" align="left" pararaph="true">
         Step 2  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
        Explain what happens in step 1 of your process!   </Typography>
@@ -115,11 +114,11 @@ export default function Process() {
 
 <div className={classes.step} >
 <Grid container spacing={4} >
-        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Grid item xs={12} sm={2}  className={classes.icon}>
         <Icon className={classes.largeicon}>edit </Icon>
           </Grid>
-          <Grid item xs={12} sm={9} spacing={3}>
-          <Typography variant="b" component="h4" align="left" pararaph>
+          <Grid item xs={12} sm={9} >
+          <Typography variant="h6" component="h4" align="left" pararaph="true">
         Step 3  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
        Explain what happens in step 1 of your process!   </Typography>
@@ -129,11 +128,11 @@ export default function Process() {
 
 <div className={classes.step} >
 <Grid container spacing={4} >
-        <Grid item xs={12} sm={2} spacing={3} className={classes.icon}>
+        <Grid item xs={12} sm={2}  className={classes.icon}>
         <Icon className={classes.largeicon}>edit </Icon>
           </Grid>
-          <Grid item xs={12} sm={9} spacing={3}>
-          <Typography variant="b" component="h4" align="left" pararaph>
+          <Grid item xs={12} sm={9} >
+          <Typography variant="h6" component="h4" align="left" >
         Step 4  </Typography>
        <Typography variant="subtitle1" gutterBottom className={classes.body2} >
        Explain what happens in step 1 of your process!   </Typography>

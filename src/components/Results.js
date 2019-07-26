@@ -35,7 +35,7 @@ export default function Results() {
   return (
      
     <div  className={classes.root}>
-      <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+      <Typography variant="h6" component="h1" align="center" className={classes.heading1} paragraph>
       Show Results Of This Service
       </Typography>
       <Typography variant="body1" gutterBottom>

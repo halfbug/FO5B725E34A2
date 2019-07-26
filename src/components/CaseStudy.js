@@ -22,7 +22,7 @@ export default function CaseStudy() {
 
   return (
     <div  className={classes.root}>
-    <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+    <Typography variant="h6" component="h1" align="center" className={classes.heading1} >
         Case Study (Doesn't have to be yours)
       </Typography>
     <Grid container spacing={1} >
@@ -31,7 +31,7 @@ export default function CaseStudy() {
        
           </Grid>
           <Grid item xs={12} sm={6} >
-          <Typography variant="h6" component="subtitle1" align='left' >
+          <Typography variant="subtitle1"  align='left' >
       
       Describe the results of the case study. You want visitors to think "this could happen to me too!"      
       </Typography>

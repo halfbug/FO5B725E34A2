@@ -48,7 +48,7 @@ export default function Solution() {
 
   return (
     <div  className={classes.root}>
-      <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+      <Typography variant="h6" component="h1" align="center" className={classes.heading1} paragraph>
       Introduce The Solution (In A General Sense, Not Your Service)      </Typography>
      
       <Typography variant="body1" gutterBottom className={classes.body1} >

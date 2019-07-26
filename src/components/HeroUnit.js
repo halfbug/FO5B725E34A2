@@ -96,11 +96,11 @@ export default function FullWidthGrid() {
       <div className={classes.heroContent} >
           <Container maxWidth="lg" >
           <Grid container spacing={4} >
-        <Grid item xs={12} spacing={3}>
-        <Typography component="h4" variant="subtitle" align="center" className={classes.tophead}  gutterBottom>
+        <Grid item xs={12} >
+        <Typography component="h4" variant="subtitle1" align="center" className={classes.tophead}  gutterBottom>
         CALL OUT YOUR AUDIENCE HERE
             </Typography>
-            <Typography component="h1" variant="b" align="center" className={classes.heading1}  paragraph>
+            <Typography component="h1" variant="h4" align="center" className={classes.heading1}  >
             This is a template version of the website we've developed to sell 6-figures/year worth of 
             online services on autopilot. Put your headline here. 
             <a href="https://sumo.com/stories/headline-formulas" >Check this article for help</a>.
@@ -127,9 +127,9 @@ export default function FullWidthGrid() {
         <Grid item xs={12} sm={6} className={classes.videoWrapper}>
         <iframe  className={classes.video} title="promotional video"
         src="https://www.youtube.com/embed/dp3NK7TMMzw" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-         allowfullscreen></iframe>
+         allowFullScreen></iframe>
         </Grid>
       </Grid>
         

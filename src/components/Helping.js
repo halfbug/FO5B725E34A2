@@ -48,17 +48,17 @@ export default function Helping() {
 
   return (
     <div  className={classes.root}>
-      <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+      <Typography variant="h6" component="h1" align="center" className={classes.heading1} >
       We're The Ones Helping You
       </Typography>   
       <Typography variant="body1" gutterBottom className={classes.body1} >
       if you can put some photos of your team here.
       </Typography>
       <Grid container spacing={4}  >
-        <Grid item xs={3} spacing={3}><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
-        <Grid item xs={3} spacing={3}><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
-        <Grid item xs={3} spacing={3}><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
-        <Grid item xs={3} spacing={3}><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
+        <Grid item xs={3} ><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
+        <Grid item xs={3} ><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
+        <Grid item xs={3} ><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
+        <Grid item xs={3} ><img width="100%" className={classes.fixheight} src={ManImage}  alt="" /></Grid>
         </Grid>
       </div>
 );

@@ -49,7 +49,7 @@ export default function Testimonial() {
 
   return (
     <div className={classes.root}>
-    <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+    <Typography variant="h6" component="h1" align="center" className={classes.heading1} paragraph>
      Testimonials
       </Typography>
       <Typography variant="body1" gutterBottom className={classes.body1} >

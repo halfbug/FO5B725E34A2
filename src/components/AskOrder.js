@@ -46,7 +46,7 @@ export default function AskOrder() {
 
   return (
     <div  className={classes.root}>
-    <Typography variant="b" component="h1" align="center" className={classes.heading1} paragraph>
+    <Typography variant="h6" component="h1" align="center" className={classes.heading1} >
     Ask For Their Order
       </Typography>
     <Grid container spacing={3} className={classes.body1} >
@@ -58,7 +58,7 @@ export default function AskOrder() {
           </Grid>
     </Grid>
      <Box >
-    <Typography variant="b" component="h5" align="center"  paragraph className={classes.heading2}>
+    <Typography variant="h6" component="h5" align="center"  paragraph className={classes.heading2}>
    THIS IS CRUCIAL! Give out a 10% discount for bulk orders of 3+ (if possible). This had a huge impact on our business.
    <Typography variant="body2" gutterBottom>
    Elaborate on the bulk offer.

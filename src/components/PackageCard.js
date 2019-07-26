@@ -54,7 +54,7 @@ export default function PackageCard() {
       <CardContent>
         
         
-        <Typography variant="b"  align="center" component="h2" className={classes.title}>
+        <Typography variant="h6"  align="center" component="h2" className={classes.title}>
           Package A
         </Typography>
         <Typography className={classes.pos} >
@@ -63,7 +63,7 @@ export default function PackageCard() {
         
        
           <div >
-            <List dense="true">
+            <List >
               {generate(
                 <ListItem>
                   <ListItemIcon>

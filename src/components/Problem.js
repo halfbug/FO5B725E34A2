@@ -62,7 +62,7 @@ export default function Problem() {
   return (
       <div className={classes.root}>
     <div className={classes.whtbx} >
-      <Typography variant="b" component="h1"  className={classes.heading1} paragraph>
+      <Typography variant="h6" component="h1"  className={classes.heading1} paragraph>
       Identify Their Problem
       </Typography>
      
@@ -75,7 +75,7 @@ export default function Problem() {
    {/* <div  className={classes.heroContent}> */}
 
 <Box className={classes.graybx}>
-       <Typography variant="b" component="h1" align="left" className={classes.heading1} paragraph>
+       <Typography variant="h6" component="h1" align="left" className={classes.heading1} paragraph>
        Agitate Their Problem      </Typography>
 
        <Typography variant="body1" gutterBottom className={classes.body1} >
