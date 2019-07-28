@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Icon from '@material-ui/core/Icon';
+
 import Grid from '@material-ui/core/Grid';
 import ManImage from '../assets/images/banda.png'
 

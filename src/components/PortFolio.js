@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Icon from '@material-ui/core/Icon';
+
 const useStyles = makeStyles(theme => ({
   root: {
   padding:theme.spacing(3),

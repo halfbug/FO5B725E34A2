@@ -1,11 +1,6 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-import HeroUnint from "./HeroUnit"
 const useStyles = makeStyles(theme => ({
 footer: {
     background: theme.palette.secondary.main,
@@ -32,5 +27,5 @@ footer: {
 
 </footer>
      )
-{/* End footer */}
+
  }

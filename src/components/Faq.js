@@ -2,8 +2,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import CaseStudyimg from '../assets/images/casestudy.jpg'
-import Chip from '@material-ui/core/Chip';
 import QandA from './QandA';
 
 
